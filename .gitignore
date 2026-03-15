@@ -1,11 +1,13 @@
 venv/
 ENV/
 .env
+
 __pycache__/
 *.py[cod]
 *$py.class
 
-data/*.csv
+data/**/*.csv
+data/csv/
 models/*.pth
 models/*.joblib
 models/*.pkl
@@ -13,5 +15,3 @@ models/*.h5
 
 mlruns/
 .pytest_cache/
-
-
