@@ -1,17 +1,23 @@
 venv/
-ENV/
 .env
 
 __pycache__/
 *.py[cod]
 *$py.class
 
+.DS_Store
+Thumbs.db
+
 data/**/*.csv
-data/csv/
-models/*.pth
-models/*.joblib
-models/*.pkl
-models/*.h5
+data/**/*.json
+data/**/*.zip
+
+models/**/*.pth
+models/**/*.pkl
+models/**/*.joblib
+models/**/*.h5
+
+notebooks/.ipynb_checkpoints/
 
 mlruns/
 .pytest_cache/
