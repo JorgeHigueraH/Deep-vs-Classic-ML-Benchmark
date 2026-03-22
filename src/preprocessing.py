@@ -16,8 +16,8 @@ class DataPreprocessor:
         
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
         
-        X_train = pd.get_dummies(X_train, drop_first=True)
-        X_test = pd.get_dummies(X_test, drop_first=True)
+        X_train = pd.get_dummies(X_train, drop_first=True, dtype=int)
+        X_test = pd.get_dummies(X_test, drop_first=True, dtype=int)
         
         X_train, X_test = X_train.align(X_test, join='left', axis=1, fill_value=0)
         
@@ -25,3 +25,5 @@ class DataPreprocessor:
         X_test[numeric_cols] = self.scaler.transform(X_test[numeric_cols])
         
         return X_train, X_test, y_train, y_test
+    
+    
