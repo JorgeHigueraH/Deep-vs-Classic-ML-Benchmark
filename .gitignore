@@ -8,16 +8,31 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+data/*.csv
 data/**/*.csv
+data/*.json
 data/**/*.json
+data/*.zip
 data/**/*.zip
 
+models/*.pth
 models/**/*.pth
+models/*.pkl
 models/**/*.pkl
+models/*.joblib
 models/**/*.joblib
+models/*.h5
 models/**/*.h5
 
 notebooks/.ipynb_checkpoints/
 
 mlruns/
 .pytest_cache/
+
+.vscode/
+.idea/
+
+*.log
+logs/
+runs/
+lightning_logs/
